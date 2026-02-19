@@ -17,7 +17,7 @@ export default function Auth() {
     // If you are on the web, it uses your Render link.
     const backendURL = window.location.hostname === "localhost" 
       ? "http://localhost:5000" 
-      : "https://chattuuu.onrender.com"; // Updated to match your server.js
+      : "https://chat-app-bnd.onrender.com"; // Updated to match your server.js
 
     const url = `${backendURL}/api/auth/${isLogin ? 'login' : 'signup'}`;
     
