@@ -4,7 +4,7 @@ import io from 'socket.io-client';
 import ScrollToBottom from 'react-scroll-to-bottom';
 
 // Connect to the backend socket server
-const socket = io.connect("http://localhost:5000");
+const socket = io.connect("https://chat-app-bnd.onrender.com");
 
 export default function Chat({ roomId, setJoined }) {
   const { user } = useContext(AuthContext);

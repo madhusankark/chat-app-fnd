@@ -13,8 +13,8 @@ export default function Login() {
     setError(''); // Clear previous errors
     
     const url = isLogin 
-      ? 'http://localhost:5000/api/auth/login' 
-      : 'http://localhost:5000/api/auth/signup';
+      ? 'https://chat-app-bnd.onrender.com/api/auth/login' 
+      : 'https://chat-app-bnd.onrender.com/api/auth/signup';
     
     try {
       const { data } = await axios.post(url, formData);
